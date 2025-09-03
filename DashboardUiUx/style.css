@@ -1,0 +1,553 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *{
+        margin: 0;
+        list-style: none;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        position: relative;
+    }
+    .header-bar {
+        background: #0039A6;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: -2px 13px 12px -4px rgba(0,0,0,0.24);
+-webkit-box-shadow: -2px 13px 12px -4px rgba(0,0,0,0.24);
+-moz-box-shadow: -2px 13px 12px -4px rgba(0,0,0,0.24);
+    }
+
+    .logo-name {
+        padding-left: 50px;
+    }
+    .logo-name p {
+        font-weight: bold;
+        color: aliceblue;
+        font-family: "Poppins", sans-serif;
+    }
+
+
+    .flex-container {
+        display: flex;
+        justify-content: flex-start; 
+        align-items: stretch; 
+        /* flex-flow: row; */ 
+        flex-direction: row;  
+        align-content: stretch;
+        background-color: #47729c;
+        height: 100vh;
+        margin: 0;
+
+    }
+
+
+    .side-bar {
+        background-color: #0039A6;
+        height: 100vh;
+        width: 50px;
+        transition: width 0.1s  linear;
+        margin: 0;
+        box-shadow: 10px -2px 12px -4px rgba(0,0,0,0.17);
+-webkit-box-shadow: 10px -2px 12px -4px rgba(0,0,0,0.17);
+-moz-box-shadow: 10px -2px 12px -4px rgba(0,0,0,0.17);
+
+    }
+    .side-bar:hover{
+        width: 20%;
+    }
+
+    .side-bar ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-right: -20px;
+        overflow: hidden;
+    }
+
+    /*parent*/
+    .side-bar ul li {
+
+        width: 105%;
+        margin-left: -35px;
+        margin-bottom: 5px;
+
+    }
+
+    .side-bar ul li:hover{
+        background-color: #02328a;
+        border-radius: 5px;
+        width: 115%;
+    }
+        
+    .side-bar ul li a{
+        display: flex;
+        padding-bottom: 20px;
+        padding: 10px 0px 10px 5px;
+        text-decoration: none;
+        color: rgb(243, 241, 241);
+    }
+
+    .side-bar ul li a img{
+        padding-right: 12px;
+    }
+
+    .side-bar ul li a p{
+        padding-top: 5px;
+        font-size: 15px;
+        white-space: nowrap;
+        color: #ffffff;
+    }
+    .content{
+        display: flex;
+        background-color: #e2e2e9;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+        flex-grow: 1;
+    }
+
+    .hero {
+        width: 100%;
+        position: relative;
+    }
+
+    .logout {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 25px 30px 25px 0px;
+        cursor: pointer;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .logout:hover{
+        transform: translateY(-5px);
+    }
+
+    .adminform {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 15px 110px 25px 0px;
+        padding: 5px 10px 5px 10px;
+        transition:  0.3s ease;
+        text-decoration: none;
+    }
+
+    .adminform:hover{
+        background: #e4e4f0;
+        border-radius: 25px;
+    }
+
+    .nameandrole {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 0px 10px;
+    }
+
+    .nameandrole h5{
+        font-size: 11px;
+        color: #01225f;
+
+    }
+
+    .nameandrole p{
+        font-size: 10px;
+        color: #05348d;
+    }
+
+    .hero h1 {
+        background: #f1f1fa;
+        box-shadow: -2px 13px 12px -8px rgba(0,0,0,0.13);
+        -webkit-box-shadow: -2px 13px 12px -8px rgba(0,0,0,0.13);
+        -moz-box-shadow: -2px 13px 12px -8px rgba(0,0,0,0.13);
+        height: 70px;
+        text-align: left;
+        padding: 20px 0px 0px 25px;
+        font-size: 25px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 50px;
+        gap: 50px;
+    }
+
+    .card1 {
+        background: #f1f1fa;
+        height: 180px;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .card1:hover {
+        transform: translateY(-10px);
+    }
+
+    .card1 h3 {
+        padding-bottom: 5px;
+        padding: 5px 0px 5px 0px;
+        color: #01225f;
+    }
+
+    .card1 p{
+        color: rgb(74, 150, 4);
+    }
+
+  
+    .datas {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        /* Change justify-content to center to place the items in the middle of the container */
+        justify-content: center;
+        /* Keep the gap property to control the space between cards */
+        gap: 50px;
+    }
+
+    .data-right-col {
+        display: flex;
+        flex-direction: column; /* Stacks data2 and data3 vertically */
+        gap: 30px;
+    }
+
+    .data-bot-row {
+        display: flex;
+        flex-direction: row; /* Stacks data4 and data5 side-by-side */
+        gap: 50px;
+    }
+    /* You can also give the data cards a fixed width to ensure they look good on larger screens */
+
+
+    .data1 {
+        background: #f1f1fa;
+        height: 410px;
+        width: 450px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .data2, .data3 {
+        background: #f1f1fa;
+        height: 180px;
+        width: 450px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .data4, .data5 {
+        background: #f1f1fa;
+        height: 180px;
+        width: 450px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        /* Add new CSS to style the "Analytics" text */
+    .analytics-text {
+        width: 950px; /* Match the width of your other containers for consistent alignment */
+        text-align: left;
+        margin-top: 60px;
+    }
+
+    .analytics-text h2 {
+        font-family: "Poppins", sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        color: #333;
+        padding-left: 0px;
+        text-align: left;
+    }
+
+    .mylogo {
+        margin: -30px 0px 20px 0px;
+        pointer-events: none;
+        padding-left: 50px;
+        padding-bottom: 10px;
+    }
+
+    .soon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px black solid;
+        width: 100%;
+        height: 500px;
+    }
+
+    .logout-container {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0
+    }
+
+    .logout-container:target {
+        visibility: visible;
+        opacity: 1;
+        background-color: #3333333a;
+        backdrop-filter: blur(2px);
+
+    }
+
+    .logout-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 350px;
+        height: 250px;
+        background-color: #f2f3f5;
+        border-radius: 10px;
+        gap: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .close-logout {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px 10px 0px 0px;
+    }
+
+    .close-logout a img{
+        height: 15px;
+        width: 15px;
+        padding: 5px;
+        transition: 0.5s ease;
+    }
+
+    .close-logout a img:hover{
+        background-color: #d7d9dd;
+        border-radius: 50px;
+    }
+
+    .logout-message h1, p {
+        color: #01225f;
+    }
+
+    .logout-message h1 {
+        padding-bottom: 10px;
+    }
+
+    .logout-btn button {
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 5px 15px 5px 15px;
+        margin: 0px 5px 0px 5px;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .logout-btn button:hover{
+        transform: scale(0.95);
+    }
+
+    .button1 {
+        border: 2px #01225f solid;
+        color: #01225f;
+    }
+    .button2 {
+        border: none;
+        background-color: #01225f;
+        color: #e2e2e9;
+    }
+
+    .logout-message p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .main-container{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .main-container:target {
+        visibility: visible;
+        opacity: 1;
+        background-color: #3333333a;
+        backdrop-filter: blur(2px);
+
+    }
+
+    .admin-form-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 350px;
+        height: 400px;
+        background-color: #47729c;
+        border-radius: 10px;
+        gap: 20px;
+        background-color: #f2f3f5;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .admin-form-container h2 {
+        margin-top: 30px 0px 40px 0px;
+        color: #01225f;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+        width: 100%;
+    }
+
+    .close-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px 10px 0px 0px;
+    }
+
+    .close-container a img{
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        transition: 0.5s ease;
+    }
+
+    .close-container a img:hover{
+        background-color: #d7d9dd;
+        border-radius: 50px;
+    }
+
+    .profile-container {
+        margin: 20px 0px 15px 0px;
+    }
+
+    .form-content {
+        margin-top: 0px;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+
+    .form-content p {
+        color: #01225f;
+        padding-bottom: 10px;
+    }
+
+    .search-bar {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .search{
+        position: relative
+    }
+
+    .text-area {
+        padding: 10px 0px 10px 15px;
+        border: 2px solid #020202;
+        border-radius: 50px;
+        font-size: 16px;
+        width: 250px;
+        height: 10px;
+    }
+
+    .search-image img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 30px;
+        width: 30px;
+        margin-top: 2px;
+        cursor: pointer;
+    }
+
+    .text-area:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+
+
+
+    @media screen and (max-width: 600px) {
+        .datas {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .data-right-col, .data-bot-row {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+        
+        .data1, .data2, .data3, .data4, .data5 {
+            width: 100%; /* All data cards will take up full width on small screens */
+        }
+
+        .analytics-text h2 {
+            text-align: center;
+            padding: 0;
+        }
+
+        .side-bar {
+            z-index: 100;
+        }
+    }

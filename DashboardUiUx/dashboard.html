@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="flex-container">
+        <div class="side-bar">
+            <ul>
+                <li class="mylogo">
+                    <a href="dashboard.html">
+                        <img src="images/police-station.png" width="30px" height="30px">
+                        <p>JailMAN</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <img src="images/dashboard.png" width="30px" height="30px">
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="booking.html">
+                        <img src="images/booking.png" width="30px" height="30px">
+                        <p>Booking</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="inmate.html">
+                        <img src="images/inmate.png" width="30px" height="30px">
+                        <p>Inmate List</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="sentencetracking.html">
+                        <img src="images/clock.png" width="30px" height="30px">
+                        <p>Sentence Tracking</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="cellManagement.html">
+                        <img src="images/prison-cell.png" width="30px" height="30px">
+                        <p>Cell Management</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="visitormanagement.html">
+                        <img src="images/visitors.png" width="30px" height="30px">
+                        <p>Visitor Management</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="eventmanagement.html">
+                        <img src="images/schedule.png" width="30px" height="30px">
+                        <p>Event Management</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="staffmanagement.html">
+                        <img src="images/policeman.png" width="30px" height="30px">
+                        <p>Staff Management</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="analytics.html">
+                        <img src="images/analytics.png" width="30px" height="30px">
+                        <p>Analytics</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="hero">
+                <h1>Dashboard</h1>
+                <a href="#modalbox" class="adminform">
+                    <img src="images/admin-colored.png" width="35px" height="35px">
+                    <span class="nameandrole">
+                        <h5>SPO1 John</h5>
+                        <p>Admin</p>
+                    </span>
+                </a>
+                <a href="#logout-modal"><img src="images/logout.png" width="30px" height="30px" class="logout"></a>
+            </div>
+
+                <div class="cards">
+                    <div class="card1">
+                        <img src="/images/inmate-colored.png" width="40px" height="40px">
+                        <h3>Total Inmates</h3>
+                        <p>7</p>
+                    </div>
+                    <div class="card1">
+                        <img src="/images/prison.png" width="40px" height="40px">
+                        <h3>Total Cells</h3>
+                        <p>10</p>
+                    </div>
+                    <div class="card1">
+                        <img src="/images/visitor-colored.png" width="40px" height="40px">
+                        <h3>Today's Visitor</h3>
+                        <p>5</p>
+                    </div>
+                    <div class="card1">
+                        <img src="/images/booking-colored.png" width="40px" height="40px">
+                        <h3>Today's Booking</h3>
+                        <p>15</p>
+                    </div>
+                </div>
+
+                <div class="analytics-text">
+                    <h2>Analytics</h2>
+                </div>
+
+
+                <div class="datas">
+                    <div class="data1">No Data Yet</div>
+                    <div class="data-right-col">
+                        <div class="data2">No Data Yet</div>
+                        <div class="data3">No Data Yet</div>
+                    </div>
+                    <div class="data-bot-row">
+                        <div class="data4">No Data Yet</div>
+                        <div class="data5">No Data Yet</div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!--Modal for adminform interface-->
+    <div class="main-container" id="modalbox">
+        <div class="admin-form-container">
+            <div class="wrapper">
+                <h2>User Information</h2>
+                <div class="profile-container">
+                    <img src="images/admin-colored.png" height="70px" width="70px">
+                </div>
+                <div class="close-container">
+                    <a href="#" class="modalClose"><img src="images/close.png" height="30px" width="30px"></a>
+                </div>
+                <div class="form-content">
+                    <p>Name: SPO1 John</p>
+                    <p>Rank: Senior Police Officer 1</p>
+                    <p>Age: 25</p>
+                    <p>Sex: Male</p>
+                    <p>Affiliate: Caloocan Police District</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Logout Verification form-->
+    <div class="logout-container" id="logout-modal">
+        <div class="logout-wrapper">
+            <div class="close-logout">
+                <a href="#" class="logoutClose"><img src="images/close.png" height="15px" width="15px"></a>
+            </div>
+            <div class="logout-message">
+                <h1>Logout Account</h1>
+                <p>Are you sure you want to logout?</p>
+            </div>
+            <div class="logout-btn">
+                <button class="button1">Cancel</button>
+                <button class="button2">Log Out</button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
